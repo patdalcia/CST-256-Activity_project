@@ -36,7 +36,8 @@ Route::get('/hello', function (){
             return view('login');
         });
         
-        Route::post('/dologin', 'LoginController@index');
+        //Route::post('/dologin', 'LoginController@index');
+        Route::post('/dologin', 'LoginController@createCustomerTest');
        
         Route::get('/login2', function(){
             return view('login2');
